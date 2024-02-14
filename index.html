@@ -2,44 +2,45 @@
 <html>
 	<head>
 		 <meta charset="UTF-8">
-		 <link href ="style.css" rel="stylesheet"/>
+		 <link href ="./style.css" rel="stylesheet"/>
+		 <script src = "script.js"></script>	
 	</head>
 	<body>
-  	<header>TD n°1 Programmation web - Application météo</header>
-  	<div class = 'flex'>
-  		<div>
-  			 <h2>Niort</h2>
-  		</div>
-  		<div>
-  			 <p>12°, pluvieux</p>
-  		</div>
-  		<div>
-  			 <img src="pluvieux.png" width="5%"/>
-  		</div>
-  
-  		<div>
-  			 <h2>Rio de Janeiro</h2>
-  		</div>
-  		<div>
-  			 <p>29°, orageux</p>
-  		</div>
-  		<div>
-  			 <img src="orageux.png" width="5%"/>
-  		</div>
-  		
-  		<div>
-  			 <h2>Paris</h2>
-  		</div>
-  		<div>
-  			 <p>-10°, ensoleillé</p>
-  		</div>
-  		<div>
-  			 <img src="ensoleille.png" width="5%"/>
-  		</div>
-  	</div>
-  	<footer>
-  		<p>Fanny Prezeau</p>
-  		<p>Icônes météo par : <a href='https://thenounproject.com'>The Noun project</a></p>
-  	</footer>
+	
+	<header>TD n°1 Programmation web - Application météo</header>
+	
+	<p> Choisir une ville :
+	<select id="nomVille" name="nomVille" onchange=afficheVille()>
+		<option value="Niort">Niort</option>
+		<option value="Rio de Janeiro">Rio de Janeiro</option>
+		<option value="Paris">Paris</option>
+	</select>
+	</p>
+	
+	<div class = "flex">
+		<div id= "Niort" class="ville">
+			 <h2>Niort</h2>
+			 <p>12°, pluvieux</p>
+			 <img src="pluvieux.png" width="5%"/>
+		</div>
+
+		<div id = "Rio de Janeiro" class="ville">
+			 <h2>Rio de Janeiro</h2>
+			 <p>29°, orageux</p>
+			 <img src="orageux.png" width="5%"/>
+		</div>
+		
+		<div id="Paris" class="ville">
+			 <h2>Paris</h2>
+			 <p>-10°, ensoleillé</p>
+			 <img src="ensoleille.png" width="5%"/>
+		</div>
+	</div>
+	
+	<footer>
+		<p>Fanny Prezeau</p>
+		<p>Icônes météo par : <a href='https://thenounproject.com'>The Noun project</a></p>
+	</footer>
+	
 	</body>
 </html>
